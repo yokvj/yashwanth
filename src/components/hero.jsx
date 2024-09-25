@@ -1,61 +1,51 @@
+import React from 'react';
+import { HERO_CONTENT } from "../constants";
+import Profile from '../assets/image.jpeg';
+import { motion } from "framer-motion";
 
-
-
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-
-import Image1 from '../assets/stay/sl1.jpg'
-import Image2 from '../assets/stay/sl2.jpg';
-import Image3 from '../assets/stay/sl3.jpg';
-import Image4 from '../assets/stay/sl4.jpg'; // Corrected the path for Image4
-
-const images = [Image1, Image2, Image3, Image4];
 
 const Hero = () => {
-  const [currentImage, setCurrentImage] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-    }, 4000); 
-
-    return () => clearInterval(interval); 
-  }, []);
-
   return (
     <div className='border-b border-neutral-900 pb-4 lg:mb-35'>
-      <div className='relative flex justify-center'>
-        <div className='relative w-full lg:w-[100%]'> {/* Adjust width here */}
-          <motion.img
-            key={currentImage}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }} // Fade transition duration
-            className='w-full h-[25vh] object-cover rounded-lg lg:h-[70vh] lg:w-full' // Adjust height here
-            src={images[currentImage]}
-            alt={`Slide ${currentImage + 1}`}
-          />
+      <div className='flex flex-wrap items-center'>
+        <div className='w-full lg:w-1/2 lg:pr-8 flex flex-col justify-center'>
+          <div className='flex flex-col items-start'>
+            <motion.h1
+            initial={{x:-100, opacity:0}}
+            animate={{x:0,opacity:1}}
+            transition={{duration:0.5,delay:0.4}} 
+            className='pb-3 text-3xl font-thin tracking-tight lg:mt-5 lg:text-6xl'>
+              Yashwanth Kumar K
+            </motion.h1>
+            <motion.span 
+            initial={{x:-100, opacity:0}}
+            animate={{x:0,opacity:1}}
+            transition={{duration:0.5,delay:1}} 
+            className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500
+             bg-clip-text text-3xl tracking-tight text-transparent'>
+              Full Stack Developer
+            </motion.span>
+            
+            <motion.p 
+            
+            initial={{x:-100, opacity:0}}
+            animate={{x:0,opacity:1}}
+            transition={{duration:0.5,delay:1.5}} 
+            className='my-2 max-w-xl py-6 font-light tracking-tighter'>
+                {HERO_CONTENT}
+            </motion.p>
+          </div>
+        </div>
+        <div className='w-full lg:w-1/2 flex justify-center pt-8'>
+          <div className='relative'>
+            <motion.img
+            initial={{x:100, opacity:0}}
+            animate={{x:0,opacity:1}}
+            transition={{duration:1,delay:1.2}}
+             className='rounded-2xl' src={Profile} alt="Yashwanth Kumar K" />
+          </div>
         </div>
       </div>
-
-      {/* Paragraph section */}
-      <div className='flex justify-center ml-0 mt-8 lg:mt-12'>
-      <p className=' lg:text-lg xl:text-xl text-1xl font-small text-justify  text-neutral-400 bg-opacity-70 p-4 lg:p-6 rounded-xl max-w-4xl lg:max-w-5xl xl:max-w-6xl  lg:mx-auto'>
-  Discover the serene beauty of Cozy Nest Backwater Homestay, a charming retreat nestled in the picturesque Garagandur B area, near the  backwaters of Hargani Dam. Located in Garagandur B village Somvarpet Taluk, our homestay offers a peaceful escape from the hustle and bustle of city life. Enjoy breathtaking views and explore the lush surroundings, with convenient access to local attractions. Situated just 13 km from Somvarpet and 26 km from Madikeri, we provide the perfect blend of comfort and nature for a memorable stay.
-</p>
-
-      </div>
-
-      {/* Text gradient style */}
-      <style jsx>{`
-        .text-gradient {
-          background: linear-gradient(to right, #02105a, #bfdbfe); 
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-          color: transparent;
-        }
-      `}</style>
     </div>
   );
 }

@@ -1,55 +1,44 @@
 
 
+// import { FaLinkedin } from "react-icons/fa";
+// import { FaGithub } from "react-icons/fa";
+// import { FaInstagram } from "react-icons/fa";
 
-import React, { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa'; // Import menu icons
-import logo from '../assets/stay/log.png'; 
+// const navbar = () => {
+//   return <nav className="mb-20 flex items-center justify-between py-6">
+//     <div className="flex flex-shrink-0 items-center">
+  
+//     </div>
+//     <div className="m-8 flex items-center justify-center gap-5 text-2xl">
+//         <FaGithub/>
+//         <FaLinkedin/>
+//         <FaInstagram/>
+//     </div>
+    
+//   </nav>
+    
+  
+// }
+
+// export default navbar
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-
   return (
-    <nav className='relative z-50'>
-      {/* Navbar container */}
-      <div className='flex items-center justify-between p-4 lg:mt-2 mb-10 lg:mr-10  text-white'>
-        {/* Logo */}
-        <div className='flex items-center '>
-          <img 
-            src={logo} // Use the imported logo here
-            alt='Logo'
-            className=' h-12 lg:h-20 ml-6 mt-4 rounded-full' // Adjust the height as needed
-          />
-        
-        </div>
-
-        {/* Menu icon for small screens */}
-        <button 
-          className='lg:hidden p-2' 
-          onClick={toggleMenu}
-        >
-          {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-        </button>
-
-        {/* Navbar links */}
-        <ul className={`lg:flex lg:text-xl lg:space-x-6 ${isMenuOpen ? 'flex flex-col absolute top-full left-0 w-full bg-gray-600 lg:relative lg:top-auto' : 'hidden'}`}>
-          <li className='p-4 lg:p-0'>
-            <a href='/' className='hover:text-gray-400'>Home</a>
-          </li>
-          <li className='p-4 lg:p-0'>
-            <a href='/gallaryimage' className='hover:text-gray-400'>Gallery</a>
-          </li>
-          <li className='p-4 lg:p-0'>
-            <a href='/Places' className='hover:text-gray-400'>Places</a>
-          </li>
-          <li className='p-4 lg:p-0'>
-            <a href='/contact' className='hover:text-gray-400'>Contact</a>
-          </li>
-          <li className='p-4 lg:p-0'>
-            <a href='/map' className='hover:text-gray-400'>Map</a>
-          </li>
-        </ul>
+    <nav className="mb-20 flex items-center justify-between py-6">
+      <div className="flex flex-shrink-0 items-center">
+      
+      </div>
+      <div className="m-8 flex items-center justify-center gap-5 text-2xl">
+        <a href="https://github.com/yokvj" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <FaGithub />
+        </a>
+        <a href="https://www.linkedin.com/in/yashwanth-kumar-k-284a3829a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <FaLinkedin />
+        </a>
+        <a href="" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <FaInstagram />
+        </a>
       </div>
     </nav>
   );
