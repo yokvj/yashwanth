@@ -1,42 +1,35 @@
-
+// src/Contact.js
 import React from 'react';
 
-const contact = () => {
+const Contact = () => {
   return (
-    <div className='border-b border-neutral-900 pb-4'>
-      <h2 className='my-20 text-center text-4xl'>Contact Me</h2>
-      <h2 className='my-10 text-center underline text-3xl'>E-Mail:   yashwanthcoorg123@gmail.com</h2>
-      <form
-        action="https://formspree.io/f/mqazppwr"
-        method="POST"
-        className='max-w-md mx-auto'
-      >
-        <label className='block mb-2 text-lg'>
-          Your email:
-          <input
-            type="email"
-            name="email"
-            className='w-full p-2 border border-gray-300 rounded'
-            required
-          />
-        </label>
-        <label className='block mt-4 mb-2 text-lg'>
-          Your message:
-          <textarea
-            name="message"
-            className='w-full p-2 border border-gray-300 rounded text-black '
-            rows="4"
-          ></textarea>
-        </label>
-        <button
-          type="submit"
-          className='mt-4 bg-black  text-white py-2 px-4 rounded hover:bg-purple-900'
-        >
-          Send
-        </button>
-      </form>
+    <div className="mt-20 flex items-center justify-center">
+      <div className="p-6 rounded-lg shadow-lg max-w-4xl w-full">
+        <h1 className="text-2xl font-bold text-gray-100 mb-12">Contact Information</h1>
+        <div className="flex flex-col md:flex-row md:space-x-8">
+          {/* Address Section */}
+          <div className="flex-1 mb-6 md:mb-0">
+            <h2 className="text-xl font-semibold text-gray-100 mb-4"><u>Address</u></h2>
+            <p className="text-gray-100">
+              Cozy nest backwater homestay<br />
+              Garagandur B, Somvarpet Taluk
+            </p>
+          </div>
+          {/* Contact Info Section */}
+          <div className="flex-1">
+            <h2 className="text-xl font-semibold text-gray-100 mb-4"><u>Contact Info</u></h2>
+            <p className="text-gray-100">
+              <strong>Phone:</strong><br />
+              <a href="tel:+919591301703" className="hover:text-gray-400">+91 9591301703</a><br />
+        
+              <strong>Email:</strong><br />
+              <a href="mailto:contact@example.com" className="hover:text-gray-400">milangowda143@gmail.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default contact;
+export default Contact;

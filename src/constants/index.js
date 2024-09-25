@@ -1,11 +1,11 @@
-import project1 from "../assets/projects/p1.jpg";
-import project2 from "../assets/projects/p2.jpg";
-import project3 from "../assets/projects/p3.jpg";
+import project1 from "../assets/projects/project-1.jpg";
+import project2 from "../assets/projects/p2.jpeg";
+import project3 from "../assets/projects/p1.jpeg";
 
 import project4 from "../assets/projects/project-4.jpg";
-import car from "../assets/projects/car.jpg";
-
-
+import car from "../assets/projects/coorg.jpeg";
+import plant from "../assets/stay/plant.jpg";
+import food from "../assets/projects/food.jpeg";
 
 
 import ph1 from "../assets/projects/ph1.jpg";
@@ -74,68 +74,74 @@ export const ABOUT_TEXT = `I am Yashwanth Kumar K, a dedicated and versatile ful
 
 My front-end skills include React.js, HTML, and CSS, while my back-end expertise covers Node.js, Java, Express.js, C++, MySQL, MongoDB, and Postman API. My journey in web development began with a deep curiosity about how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. I am currently seeking an entry-level development role to apply my skills and contribute to impactful projects. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
 
-export const EXPERIENCES = [
-  {
-    year: "2024 - 04 Months",
-    role: "MERN Stack Developer (Intern)",
-    company: "Softinoik Innovation",
-    description: "Worked as a MERN Stack Developer intern, contributing to the development of web applications using MongoDB, Express.js, React.js, and Node.js. Assisted in implementing features and optimizing application performance.",
-    technologies: ["MongoDB", "Express.js", "React.js", "Node.js"],
-  },
-  {
-    year: "2023 - 04 Months",
-    role: "Frontend Web Developer (Intern)",
-    company: "Camplin Innovation",
-    description: "Interned as a Frontend Web Developer, focusing on designing and developing user interfaces using HTML, CSS, and JavaScript. Worked on enhancing user experiences and ensuring responsive design across different devices.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-  },
-];
 
 
 export const PROJECTS = [
   {
-    title: "PropertyHub",
+    title: "Room-1 Two Cot With Attached Bathroom",
     image: project1,
     description:
-      "A property management system that includes three modules: admin, manager, and client. Clients can book properties (land, residential, or commercial), make advance payments, and request maintenance.",
-    technologies: ["MongoDB", "Express.js", "React", "Node.js"],
+    "Enjoy a comfortable stay with our two cot room featuring an attached bathroom. Pricing options: Non-Veg at ₹1200 per person and Veg at ₹1000 per person.(Note: Prices May Vary According to seasons)",
+    technologies: ["NonVeg-1200/Person", "Veg-1000/Person"],
   }
   ,
   {
-    title: "FabricClore",
+    title: "Room-2 Two Cot With Attached Bathroom ",
     image: project2,
     description:
-      "A clothing management application that includes two modules: admin and client. Clients can sort or filter search results, choose clothes in various categories, make payments, and track their orders. Admins can manage sales and workers.",
-    technologies: ["React.js", "HTML", "CSS", "MySQL", "Node.js"],
+    "Enjoy a comfortable stay with our two cot room featuring an attached bathroom. Pricing options: Non-Veg at ₹1200 per person and Veg at ₹1000 per person.(Note: Prices May Vary According to seasons)",
+    technologies: ["NonVeg-1200/Person", "Veg-1000/Person"],
   }
   ,
   {
-    title: "Bookshop Management System",
+    title: "Both Room-1 and Room-2",
     image: project3,
     description:
-      "A bookshop management system that includes two modules: admin and client. Clients can book books, make payments, and track their details. The admin manages booking data, books, and client information.",
-    technologies: ["PHP", "MySQL", "HTML", "CSS"],
+      "A special offer: Book two rooms and get a 10% discount on the total price. This discount applies to the entire house booking. Terms and conditions apply.",
+    technologies: [],
   }
   ,
-  {
-    title: "Cricket Dashboard",
-    image: project4,
-    description:
-      "A cricket dashboard that allows users to interact with the match by clicking to view the total overs and total balls. Users can make payments for actions such as hitting a six, four, single, double, or getting out. Once the match finishes, the dashboard will display the total score, run rate, total overs, and disable all the buttons.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-  }
-  ,
+  // {
+  //   title: "Cricket Dashboard",
+  //   image: project4,
+  //   description:
+  //     "A cricket dashboard that allows users to interact with the match by clicking to view the total overs and total balls. Users can make payments for actions such as hitting a six, four, single, double, or getting out. Once the match finishes, the dashboard will display the total score, run rate, total overs, and disable all the buttons.",
+  //   technologies: ["HTML", "CSS", "JavaScript"],
+  // }
+  // ,
 ];
+
+
 export const RESEARCHPROJECTS = [
   {
-    title: "NumberPlate Detection using YOLOv8 and Easy OCR",
+    title: "History of Coorg",
     image: car,
     description:
-      "A number plate detection system designed to accurately recognize and extract vehicle registration plates from images. This system leverages YOLOv8 for high-performance object detection and EasyOCR for precise text recognition, achieving an impressive result accuracy of 98%. The dataset used for training the model is sourced from Roboflow, ensuring a robust and diverse set of examples to enhance the detection capabilities.",
-    technologies: ["YOLOv8", "EasyOCR", "Roboflow"],
+      "Coorg, also known as Kodagu, is a district in Karnataka, India, with a rich cultural heritage. Its history includes early settlements and influence from ancient dynasties like the Kadambas, Chalukyas, and Hoysalas. The Kodavas, the indigenous people of Coorg, have a distinct language and cultural practices. Under British rule in the 19th century, coffee cultivation was introduced, boosting the local economy. Post-independence, Coorg integrated into India and saw modern development. The region celebrates unique festivals such as Puttari and Huthri, and is known for its spicy cuisine and traditional crafts. Coorg's vibrant cultural legacy continues to be a vital part of its identity.",
+    technologies: [],
+  }
+]
+//Coorgi cuisine offers a tantalizing array of flavors deeply rooted in the region's agricultural traditions. Renowned for its rich and aromatic dishes, the cuisine features specialties like Pandi Curry, a succulent pork dish infused with a blend of roasted spices and slow-cooked to perfection. Accompanying dishes such as Noolputtu, rice noodles, and Kadumbuttu, steamed rice balls, provide a hearty complement to the bold flavors of the curries. The use of coconut in various forms, from grated to milk, imparts a creamy texture to many dishes, enhancing their depth and richness. Local ingredients like bamboo shoots find their way into unique dishes such as Baimbale, a flavorful curry that showcases seasonal produce. Coorg's coffee, famed for its rich aroma and robust taste, rounds out the culinary experience. This vibrant cuisine reflects the lush landscapes and cultural heritage of the region, offering a distinctive taste of South India.
+
+export const Planation = [
+  {
+    title: "Plantation",
+    image: plant,
+    description:
+      "Coorg, nestled in the Western Ghats of India, is renowned for its lush plantations that stretch across rolling hills. The region's coffee plantations are particularly famous, producing some of the finest Arabica and Robusta beans in the country. Visitors can stroll through the fragrant coffee gardens, witnessing the entire process from blossom to bean. In addition to coffee, Coorg is also known for its spice plantations, where black pepper, cardamom, and vanilla thrive in the rich, loamy soil. The unique microclimate, with its abundant rainfall and moderate temperatures, creates an ideal environment for these crops.",
+    technologies: [],
   }
 ]
 
+export const Food = [
+  {
+    title: "Coorgi Cuisine",
+    image: food,
+    description:
+      "Coorgi cuisine offers a tantalizing array of flavors deeply rooted in the region's agricultural traditions. Renowned for its rich and aromatic dishes, the cuisine features specialties like Pandi Curry, a succulent pork dish infused with a blend of roasted spices and slow-cooked to perfection. Accompanying dishes such as Noolputtu, rice noodles, and Kadumbuttu, steamed rice balls, provide a hearty complement to the bold flavors of the curries. The use of coconut in various forms, from grated to milk, imparts a creamy texture to many dishes, enhancing their depth and richness. Local ingredients like bamboo shoots find their way into unique dishes such as Baimbale, a flavorful curry that showcases seasonal produce. Coorg's coffee, famed for its rich aroma and robust taste, rounds out the culinary experience. This vibrant cuisine reflects the lush landscapes and cultural heritage of the region, offering a distinctive taste of South India.",
+    technologies: [],
+  }
+]
  export const IMAGES=[
   {
     
