@@ -3,6 +3,8 @@ import project2 from "../assets/projects/p2.jpg";
 import project3 from "../assets/projects/p3.jpg";
 
 import project4 from "../assets/projects/project-4.jpg";
+import stay from "../assets/projects/stay.jpg";
+import role from "../assets/projects/role.jpg";
 import car from "../assets/projects/car.jpg";
 
 
@@ -125,6 +127,20 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "JavaScript"],
   }
   ,
+  {
+    "title": "CozyNest Backwater Homestay Website",
+    "image": stay,  
+    "description": "A freelance project developed for CozyNest Backwater Homestay. The website showcases the homestay's offerings, including detailed room information, amenities, and a contact section for booking inquiries. The design focuses on a clean, modern, and user-friendly interface to enhance the user experience and highlight the serene ambiance of the homestay.",
+    "technologies": ["React.js", "Tailwind CSS"],
+    "url": "https://cozynestbackwaterhomestay.vercel.app/"
+  },
+  {
+    "title": "Role-Based Management System",
+    "image": role,
+    "description": "An assignment project demonstrating a role-based management system. It includes role-specific access for Admin and User, built with a responsive UI using React.js and Tailwind CSS.",
+    "technologies": ["React.js", "Tailwind CSS"],
+    "url": "https://vr-frontend-kappa.vercel.app/"
+  }
 ];
 export const RESEARCHPROJECTS = [
   {
